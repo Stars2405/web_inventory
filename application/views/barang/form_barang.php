@@ -55,9 +55,15 @@ form-control-line form-user-input" name="nama_barang" id="nama_barang">
 						</div>
 					</div>
 					<div class="form-group">
+						<label class="col-md-12">Stok</label>
+						<div class="col-md-12">
+							<input type="text" placeholder="Inputkan stok" class="form-control 
+form-control-line form-user-input" name="stok" id="stok">
+						</div>
+					</div>
+					<div class="form-group">
 						<div class="col-sm-12">
 							<input class="form-user-input" type="hidden" name="id_barang" id="id_barang" value="">
-							<input class="form-user-input" type="hidden" name="stok" id="stok" value="0">
 							<button class="btn btn-success" type="submit">Simpan Data Barang</button>
 						</div>
 					</div>
