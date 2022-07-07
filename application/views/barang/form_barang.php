@@ -64,7 +64,7 @@ form-control-line form-user-input" name="stok" id="stok">
 					<div class="form-group">
 						<div class="col-sm-12">
 							<input class="form-user-input" type="hidden" name="id_barang" id="id_barang" value="">
-							<button class="btn btn-success" type="submit">Simpan Data Barang</button>
+							<button class="btn btn-success" onclick="loadMenu('<?= base_url('barang')?>')" type="submit">Simpan Data Barang</button>
 						</div>
 					</div>
 				</form>
