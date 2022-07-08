@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Jul 2022 pada 10.45
+-- Waktu pembuatan: 08 Jul 2022 pada 12.29
 -- Versi server: 10.4.24-MariaDB
 -- Versi PHP: 8.1.6
 
@@ -35,6 +35,13 @@ CREATE TABLE `admin` (
   `level` set('admin','owner') NOT NULL DEFAULT 'admin'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `admin`
+--
+
+INSERT INTO `admin` (`id_admin`, `email`, `password`, `nama`, `level`) VALUES
+(1, 'admin@gmail.com', 'd033e22ae348aeb5660fc2140aec35850c4da997', 'admin', 'admin');
+
 -- --------------------------------------------------------
 
 --
@@ -55,14 +62,18 @@ CREATE TABLE `barang` (
 --
 
 INSERT INTO `barang` (`id_barang`, `nama_barang`, `deskripsi`, `stok`, `status_delete`, `foto_produk`) VALUES
-(1, 'Nutrisari Jeruk rasa Mangga', 'Enak pokok e', 20, 0, '21.jpg'),
-(2, 'Jasjus', 'Hemmmm segerrr', 0, 0, '8.jpg'),
-(3, 'Haram', 'Ini barang haram', 22, 0, '2.jpg'),
-(4, 'lol', 'lol', 0, 1, '0'),
-(5, 'qwer', 'qwr', 0, 1, '0'),
-(8, 'awdwda', 'defrf', 0, 1, '0'),
-(9, 'fefef', 'gtgyh', 0, 0, '1-old.jpg'),
-(12, 'dwadasf', 'dvtgthyh', 0, 0, '1.png');
+(1, 'adwd', 'wadwdad', 10, 0, 'd4.jpg'),
+(2, 'Jasjuss', 'Hemmmm segerrr', 7, 0, '8.jpg'),
+(3, 'Haram', 'Ini barang haram', 22, 0, 'haram.jpg'),
+(9, 'fefef', 'ggggg', 25, 0, '1-old.jpg'),
+(12, 'dwadasf', 'dvtgthyh', 22, 0, '1.png'),
+(13, 'fdfrgrg', 'awdda', 0, 1, ''),
+(14, 'btbr', 'awad', 13, 1, ''),
+(15, 'aaa a', 'bbbb', 32, 0, '3.png'),
+(16, '', '', 0, 1, ''),
+(17, 'barang', 'barang', 1, 1, ''),
+(18, 'aaa', 'aaaa', 0, 0, 'agent.jpg'),
+(19, 'barang', 'bintang', 13, 0, 'd4.jpg');
 
 -- --------------------------------------------------------
 
@@ -207,13 +218,13 @@ ALTER TABLE `stok_bulanan`
 -- AUTO_INCREMENT untuk tabel `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_admin` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT untuk tabel `barang`
 --
 ALTER TABLE `barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT untuk tabel `barang_masuk`
