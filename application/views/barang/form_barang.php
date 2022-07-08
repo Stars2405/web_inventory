@@ -57,7 +57,7 @@ form-control-line form-user-input" name="nama_barang" id="nama_barang">
 					<div class="form-group">
 						<label class="col-md-12">Stok</label>
 						<div class="col-md-12">
-							<input type="text" placeholder="Inputkan stok" class="form-control 
+							<input type="number" placeholder="Inputkan stok" class="form-control 
 form-control-line form-user-input" name="stok" id="stok">
 						</div>
 					</div>

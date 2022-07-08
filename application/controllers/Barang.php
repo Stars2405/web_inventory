@@ -198,6 +198,7 @@ class Barang extends CI_Controller
 		$data_json = array(
 			'konten' => $konten,
 		);
+		
 		echo json_encode($data_json);
 	}
 	private function upload_foto($id_barang, $files)

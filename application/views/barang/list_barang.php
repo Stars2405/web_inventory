@@ -15,7 +15,7 @@
 					</div>
 					<div class="col-md-3">
 						<label>Maksimal Stok</label><br/>
-						<input type="text" name="cari_stok" id="cari_stok" class="form-control form-input-cari">
+						<input type="number" name="cari_stok" id="cari_stok" class="form-control form-input-cari">
 					</div>
 					<div class="col-md-3">
 						<br/>
@@ -75,6 +75,7 @@
 				alert('Error : ' + errorMsg);
 			}
 		});
+	}
 	function cariData() {
 		var url = 'http://localhost/client_inventory/barang/cari_barang';
 		var dataForm = {};
@@ -97,10 +98,9 @@
 				alert('Error : ' + errorMsg);
 			}
 		});
-		$('#btn-cari').on('click', function () {
-			cariData();
-		});
 	}
-}
+	$('#btn-cari').on('click', function () {
+		cariData();
+	});
 	loadKonten('http://localhost/client_inventory/barang/list_barang');
 </script>
